@@ -39,10 +39,40 @@
     <!-- Template styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+ <!-- Enlace al CDN de Font Awesome (Última versión) -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xrTQ2lhb7I0vmOQlIe55eD5npn6eW2chK9RuxT+J7z8e+u/XFlTgQJFpgwGg5zITcR4imZlKz3lY3RiD0cUByg==" crossorigin="anonymous" />
 
 </head>
 
 <body>
+    <style>
+    
+
+        #whatsapp-container {
+            z-index: 1000;
+            position: fixed;
+            bottom: 100px;
+            right: 38px;
+            background-color: #25D366; /* Color de fondo de WhatsApp */
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        #whatsapp-icon {
+            width: 30px; /* Ajusta el tamaño del icono según tus necesidades */
+            height: 30px;
+            display: block;
+            margin: 0 auto; /* Centrar el icono dentro del contenedor */
+        }
+    </style>
+    <div id="whatsapp-container">
+        <a href="https://api.whatsapp.com/send?phone=51906485592" target="_blank">
+            <img id="whatsapp-icon" src="/assets/images/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+
 
     <div class="preloader">
         <img src="assets/images/logo.png" class="preloader__image" alt="">
@@ -76,8 +106,10 @@
                                 <ul class="list-unstyled">
                                     <li><a href="mailto:avilio@afbtecnicosasociados.com.pe"><span
                                                 class="flaticon-email"></span>avilio@afbtecnicosasociados.com.pe</a></li>
-                                    <li><a href="tel:928881769"><span class="flaticon-telephone"></span>928 881 769</a></li>
-                                            
+                                    <li><a href="tel:923449250"><span class="flaticon-telephone"></span>923 449 250</a></li>
+                                    <li><a href="https://api.whatsapp.com/send?phone=51906485592" target="_blank"><span class="fab fa-whatsapp"></span>906 485 592</a></li>
+
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -488,7 +520,7 @@
                                 </div>
                                 <div class="call_one_number">
                                     <h4>¡Contáctanos!</h4>
-                                    <a href="tel:928881769">928 881 769</a>
+                                    <a href="tel:923449250">923 449 250</a>
                                 </div>
                             </div>
                         </div>
@@ -500,11 +532,11 @@
         <!--Google Map-->
         <section class="google_map">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d663.6757318530096!2d-76.15078572186015!3d-13.673100171324771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x911068e8c787b2d3%3A0x97300ffecb7fb0ac!2sHuaytara%2C%20Pisco%2011630!5e0!3m2!1ses!2spe!4v1700667064848!5m2!1ses!2spe"
                 class="google-map__contact" allowfullscreen></iframe>
 
         </section>
-
+      
         <!--Site Footer Start-->
       <!-- Pie de Página Comienzo -->
 <footer class="site-footer" style="background-image: url(assets/images/resources/footer-bg-img.jpg)">
@@ -533,8 +565,17 @@
                                 <span class="flaticon-telephone"></span>
                             </div>
                             <div class="footer-widget_about_text">
-                                <a href="tel:+51-123-456-789">+51 928 881 769</a>
+                                <a href="tel:+51923449250">923 449 250</a>
                             </div>
+                        </li>
+                        <li>
+                            <div class="footer-widget_about_icon">
+                                <span class="fab fa-whatsapp"></span> 
+                            </div>
+                            <div class="footer-widget_about_text">
+                                <a href="https://api.whatsapp.com/send?phone=51906485592" target="_blank">+51 906 485 592 </a>
+                            </div>
+                            
                         </li>
                     </ul>
                 </div>
@@ -598,7 +639,7 @@
                 </li>
                 <li>
                     <i class="flaticon-telephone"></i>
-                    <a href="tel:928881769">928 881 769</a>
+                    <a href="tel:923449250">923 449 250</a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
