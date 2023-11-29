@@ -45,6 +45,91 @@
 </head>
 
 <body>
+
+
+
+
+    
+<style>
+    body {
+  font-family: Arial, sans-serif;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+
+  background-color: rgba(0, 0, 0, 0.87);
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+.modal-content h1{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+</style>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h1>Sitio Web Suspendido</h1>
+            <p>Disculpe las molestias, pero nuestro sitio web está temporalmente suspendido. Vuelve pronto.</p>
+            <p>Contacta a soporte en: <a href="https://www.tuncar.dev" target="_blank">www.tuncar.dev</a></p>
+          </div>
+          
+      </div>
+<script>
+    // Obtener el modal
+var modal = document.getElementById('myModal');
+
+// Obtener el botón para cerrar el modal
+var span = document.getElementsByClassName('close')[0];
+
+// Mostrar el modal al cargar la página
+window.onload = function() {
+  modal.style.display = 'block';
+};
+
+// Función para cerrar el modal
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+</script>      
+
+
+
+
+
+
     <style>
     
 
